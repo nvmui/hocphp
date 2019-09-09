@@ -23,22 +23,26 @@
 				$soa=$_POST['soa'];
 				$sob=$_POST['sob'];
 				$pheptinh=$_POST['pheptinh'];
-				Switch ($pheptinh){
-					case '1':
-						echo "Tổng của phép cộng số ".$soa." và ".$sob." là:".($soa+$sob);
-						break;
-					case '2':
-						echo "Phép trừ số ".$soa." và ".$sob." là:".($soa-$sob);
-						break;
-					case '3':
-						echo "Phép nhân số ".$soa." và ".$sob." là:".($soa*$sob);
-						break;
-					case '4':
-						echo "Phép chia số ".$soa." và ".$sob." là:".($soa/$sob);			# code...
-						break;
-					default:
-						echo "Bạn nhập giá trị sai.";
-						break;						
+				if ($soa==null or $sob==null) {
+					echo "Bạn chưa nhận số a hoặc số b";
+				}else{
+					Switch ($pheptinh){
+						case '1':
+							echo "Tổng của phép cộng số ".$soa." và ".$sob." là:".($soa+$sob);
+							break;
+						case '2':
+							echo "Phép trừ số ".$soa." và ".$sob." là:".($soa-$sob);
+							break;
+						case '3':
+							echo "Phép nhân số ".$soa." và ".$sob." là:".($soa*$sob);
+							break;
+						case '4':
+							echo "Phép chia số ".$soa." và ".$sob." là:".($soa/$sob);			# code...
+							break;
+						default:
+							echo "Bạn nhập giá trị sai.";
+							break;						
+					}
 				}
 			}
 		?>
