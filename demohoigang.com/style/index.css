@@ -1,0 +1,81 @@
+@charset 'utf8';
+.banner{
+	width:100%;
+	height:150px;
+	margin:auto;
+}
+.menu_top{
+    height: 50px;
+    background-color: #f84444;
+}
+.menu_top ul{
+    list-style: none;
+    /* height:50px; */
+}
+.menu_top ul li{
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    width: 150px;
+}
+.menu_top li:hover{
+    background-color: #09F;
+    color:red;
+}
+.menu_top a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.menu_top p{
+    line-height: 50px;
+    margin-top: 10px;
+}
+.menu_top a:hover{
+    color: red;
+}
+.menu_left{
+    height: auto;
+    /* background-color: #fad390; */
+}
+.menu_left ul{
+    height:auto;
+	list-style:none;
+	font-size:18px;
+}
+.menu_left ul li{
+	margin-left:-30px;
+    border-top: 1px solid gainsboro;
+    line-height: 40px;
+    font-weight: bold;
+}
+.menu_left ul li a{
+	text-decoration:none;
+    margin-left: 30px;
+	color:#000;
+}
+.menu_left li:hover{
+    background-color: #09F;
+    color: white;
+}
+.menu_left a:hover{
+	/* text-decoration:underline; */
+	color:#F00;
+}
+.lbl_gio{
+    text-align: right;
+    line-height: 50px;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+}
+.tensp{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+}
+.giasp{
+    color: red;
+    font-weight: bold;
+}

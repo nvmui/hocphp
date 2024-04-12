@@ -1,0 +1,30 @@
+.hienthi ul{
+	list-style: none;
+	width: 100%;
+}
+.hienthi img{
+	width: 200px;
+	height: 200px;
+}
+.hienthi ul li{
+	float: left;
+	width: 250px;
+	height: 300px;
+	border: 1px solid #000;
+	margin: 3px;
+	text-align: center;
+}
+.hienthi a{
+	text-decoration:none;
+}
+.hienthi p{
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 2px;
+}
+.hienthi input{
+	width: 90px;
+	height: 30px;
+	padding: 2px;
+}

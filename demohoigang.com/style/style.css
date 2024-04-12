@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+}
+.waper{
+	width:1000px;
+	height:auto;
+	border:1px solid #000;
+	margin:auto;
+}
+.banner{
+	width:100%;
+	height:150px;
+	margin:auto;
+}
+.khungchinh {
+	margin: auto;
+	width: 600px;
+}
+.menu{
+	width:100%; 
+	height:50px;
+	background-color:#b71540;
+	font-size:18px;	
+	margin:auto;
+	line-height: 50px;
+}
+.menu ul{
+	width:100%;
+	height:50px;
+	list-style:none;
+}
+.menu ul li{
+	float:left;
+	line-height:50px;
+	margin-left:10px;
+	line-height: 50px;
+}
+.menu ul li a{
+	text-decoration:none;
+	color: #FFF;
+}
+.menu a:hover{
+	text-decoration:underline;
+	color:#1e3799;
+}
+.conten{
+	width:100%;
+	height:auto;
+	border:1px solid #000;
+}
+.left {
+	width: 200px;
+	clear: left;
+	height: auto;
+	float: left;
+	background-color: #fad390;
+}
+.left1 {
+	height: auto;
+	background-color: #fad390;
+}
+.right {
+	width: 200px;
+	float: right;
+	height: auto;
+}
+.danhsach ul{
+	width:100%;
+	height:auto;
+	list-style:none;
+	font-size:18px;
+}
+.danhsach ul li{
+	margin-left:10px;
+	margin:10px;	
+}
+.danhsach ul li a{
+	text-decoration:none;
+	color:#000;
+}
+.danhsach a:hover{
+	text-decoration:underline;
+	color:#F00;
+}
+.khungchinh{
+	width:795px;
+	height:auto;
+	float:right;
+	margin:auto
+}
+.danhsachall ul{
+	width:100%;
+	list-style:none;
+}
+.danhsachall ul li{
+	width:250px;
+	height:auto;
+	text-align:center;
+	float:left;
+	margin:5px;
+	border:1px solid #000;
+}
+.danhsachall ul li a{
+	text-decoration:none;
+	margin-top:5px;
+}
+.sanpham ul{
+	width:100%;
+	list-style:none;
+}
+.sanpham ul li{
+	width: 250px;
+	height:300px;
+	text-align:center;
+	float: left;
+	margin:5px;
+	border:1px solid #000;
+}
+.sanpham li a{
+	text-decoration: none;
+	font-size: 20px;
+}
+.sanpham input{
+	width: 90px;
+	padding: 2px;
+}
+.sanpham li p{
+	padding: 2px;
+}
+
+.clear{
+	clear:both;
+}
+.footer{
+	width:100%;
+	height:50px;
+}
+table.ds{
+	padding-top:10px;
+	border-collapse:collapse;
+	float:left;
+}
+#slider	{ 
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    width:100%;
+    height:150px;
+    overflow:hidden; 
+}
+#slider img {
+    width:100%;
+    height:150px;    
+}
+#slider p { 
+    bottom:0;
+    padding:20px;
+    color:#ffffff;
+    background-color: #008000;
+    opacity: 0.6;
+    margin:0;
+    left:0;
+    right:0; 
+}
