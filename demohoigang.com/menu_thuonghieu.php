@@ -6,7 +6,7 @@
 	$query = mysqli_query($con, $sql);
   	if(mysqli_num_rows($query) > 0){
 		while($row = mysqli_fetch_array($query)){?>
-        <li><a href="index.php?action=hang&hangsx=<?php echo $row['idhang']; ?>"></a><?php echo $row['TenHang']; ?></li>
+        <li><a href="index.php?action=hang&hangsx=<?php echo $row['idhang']; ?>"><?php echo $row['TenHang']; ?></a></li>
         <?php
 		}
 	}

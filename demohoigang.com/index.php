@@ -9,8 +9,8 @@
     <title>Hội giảng</title>
 </head>
 <?php
-    session_start();
-    ob_start();
+    session_start();//bắt đầu một phiên giao dịch
+    ob_start();// lưu trữ dữ liệu vào bộ nhớ tạm
 ?>
 <body>
     <div class="container-fluid bg-light">        
@@ -34,7 +34,18 @@
                                 }else{
                                     $count = 0;
                                 }
-                                echo "<a href='./index.php?content=viewcard'><p class='lbl_gio'><i class='bi bi-cart'></i> Giỏ hàng có ". $count ." sản phẩm</p></a>";
+                                echo "<a href='./index.php?content=viewcard'><p class='lbl_gio'>Giỏ hàng có " .$count." sản phẩm</p> </a>";
+                            ?>
+                            
+                        </span>
+                        <span class="navbar-text text-right">
+                            <?php
+                                // if(isset($_SESSION['card'])!=null){
+                                //     $count = count($_SESSION['card']);
+                                // }else{
+                                //     $count = 0;
+                                // }
+                                // echo "<a href='./index.php?content=viewcard'><p class='lbl_gio'><i class='bi bi-cart'></i> Giỏ hàng có ". $count ." sản phẩm</p></a>";
                             ?>
                         </span>
                     </div>
