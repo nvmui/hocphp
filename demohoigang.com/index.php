@@ -35,7 +35,8 @@
                                     $count = 0;
                                 }
                                 echo "<a href='./index.php?content=viewcard'><p class='lbl_gio'>Giỏ hàng có " .$count." sản phẩm</p> </a>";
-                            ?>                            
+                            ?>
+                            
                         </span>
                         <span class="navbar-text text-right">
                             <?php
@@ -79,10 +80,6 @@
                                 }
                                 case 'viewcard':{
                                     include('./admin/giohang/viewcard.php');
-                                    break;
-                                }
-                                case 'delete':{
-                                    include('./admin/giohang/addcard.php');
                                     break;
                                 }
                                 default:

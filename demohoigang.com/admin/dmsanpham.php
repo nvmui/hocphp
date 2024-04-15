@@ -20,7 +20,7 @@
                 <th width="10%">Sửa - Xoá</th>
             </tr>
             <?php
-                $sql = "SELECT * FROM sanpham";
+                $sql = "SELECT * FROM sanpham order by id DESC ";
                 $hang = mysqli_query($con, $sql);
                 if(mysqli_num_rows($hang)>0){
                     $i = 1;
@@ -32,7 +32,7 @@
                             <td><?php echo $row['TenSP']; ?></td>
                             <td><?php echo $row['Chitiet']; ?></td>
                             <td><img src="../<?php echo $row['Hinhanh']; ?>" width="150px" height="150px"></td>
-                            <td><?php echo $row['GiaSP']; ?></td>
+                            <td><?php echo number_format($row['GiaSP']); ?></td>
                             <td>
                                 <a href="#"><button class="btn btn-primary">Sửa</button></a>
                                 <a href="#"><button class="btn btn-danger">Xoá</button></a>

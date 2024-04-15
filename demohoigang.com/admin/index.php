@@ -34,9 +34,14 @@
                                 include('./frmsanpham.php');
                                 break;
                             }
-                            case 'sanpham':
+                            case 'sanpham':{
                                 include('./dmsanpham.php');
                                 break;
+                            }
+                            case 'insertsp':{
+                                include('./insertsp.php');
+                                break;
+                            }
                             default:
                             break;
                         }

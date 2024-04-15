@@ -7,14 +7,14 @@
 </head>
 <body>
     <h4 class="text-center">NHẬP SẢN PHẨM MỚI</h4>
-    <form method="post" action="#" enctype="multipart/form-data">
+    <form method="post" action="index.php?admin=insertsp" enctype="multipart/form-data">
     <div class="form-group">
         <label for="sp_ten">Tên sản phẩm</label>
         <input type="text" class="form-control" id="sp_ten" name="sp_ten" placeholder="Nhập tên sản phẩm">
     </div>
     <div class="form-group">
         <label for="sp_ten">Mô tả sản phẩm</label>
-        <input type="text" multiple="3" class="form-control" id="sp_ten" name="sp_ten" placeholder="Nhập tên sản phẩm">
+        <input type="text" multiple="3" class="form-control" id="sp_ten" name="sp_mota" placeholder="Nhập mô tả sản phẩm">
     </div>    
     <div class="form-group">
         <div class="file-loading">
@@ -30,7 +30,7 @@
                 $dm = mysqli_query($con, $sql);
                 if(mysqli_num_rows($dm)>0){
                     while($row = mysqli_fetch_array($dm)){
-                        echo "<option value='.$row[iddm].'>$row[TenDM]</option>";
+                        echo "<option value='$row[iddm]'>$row[TenDM]</option>";
                     }
                 }
             ?>        
@@ -44,7 +44,7 @@
                 $hang = mysqli_query($con, $sql);
                 if(mysqli_num_rows($hang)>0){
                     while($row = mysqli_fetch_array($hang)){
-                        echo "<option value='.$row[idhang].'>$row[TenHang]</option>";
+                        echo "<option value='$row[idhang]'>$row[TenHang]</option>";
                     }
                 }
             ?>    
@@ -60,7 +60,7 @@
     </div>
     <div class="form-group">
         <label for="ngaynhap">Ngày nhập</label>
-        <input type="datetime-local" class="form-control" name="gaynhap">
+        <input type="date" class="form-control" name="gaynhap">
     </div>
     <div class="form-group">
         <label for="ghichu">Ghi chú</label>
