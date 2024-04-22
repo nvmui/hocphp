@@ -1,6 +1,6 @@
 <?php
     include('./ketnoi/ketnoicsdl.php');
-    $sql = "SELECT * FROM sanpham  ORDER BY id DESC limit 1";
+    $sql = "SELECT * FROM sanpham  ORDER BY id DESC limit 10";
 	$kq = mysqli_query($con, $sql);
     if(mysqli_num_rows($kq)>0){
         while($row = mysqli_fetch_array($kq)){

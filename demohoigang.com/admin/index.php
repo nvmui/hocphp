@@ -20,6 +20,7 @@
                     <li><a href="index.php?admin=sanpham">Danh mục sản phẩm</a></li>
                     <li><a href="#">Danh mục loại</a></li>
                     <li><a href="#">Danh mục nhà sản xuất</a></li>
+                    <li><a href="index.php?admin=dmnhacc">Danh mục nhà phân phối</a></li>
                     <li><a href="#">Quản lý đơn hàng</a></li>
                     <li><a href="#">Quản lý hệ thống</a></li>
                 </ul>
@@ -40,6 +41,22 @@
                             }
                             case 'insertsp':{
                                 include('./insertsp.php');
+                                break;
+                            }
+                            case 'nhacc':{
+                                include('./frmnhapp.php');
+                                break;
+                            }
+                            case 'dmnhacc':{
+                                include('./dsnhapp.php');
+                                break;
+                            }
+                            case 'insertnpp':{
+                                include('./insertnpp.php');
+                                break;
+                            }
+                            case 'deletenpp':{
+                                include('./insertnpp.php');
                                 break;
                             }
                             default:

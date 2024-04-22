@@ -6,7 +6,7 @@
     <title>DANH MỤC SẢN PHẨM</title>
 </head>
 <body>
-    <p class="text-center">DANH MỤC SẢN PHẨM</p>
+    <p class="text-center"><strong> DANH MỤC SẢN PHẨM</strong></p>
     <p align="right"><a href="index.php?admin=addsanpham" class="text-right"><button class="btn btn-primary">Thêm mới</button></a></p>
     <div>
         <table class="table table-bordered align-middle table-striped">
